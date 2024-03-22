@@ -1,6 +1,7 @@
 :root {
     --white: #E9EAEE;
     --dark: #39373A;
+    --yellow: #ff9E00;
 }
 
 body {
@@ -50,4 +51,17 @@ body {
     font-weight: 400;
     font-size: small;
     color: var(--dark);
+}
+
+/*Estados de Conservación*/
+
+#vulnerable {
+    background-color: var(--yellow);
+    border: none;
+    color: var(--dark);
+    font-size: x-small;
+    text-transform: uppercase;
+    padding: 0.5em;
+    font-weight: 700;
+    margin-top: -75px;
 }
