@@ -2,6 +2,8 @@
     --white: #E9EAEE;
     --dark: #39373A;
     --yellow: #ff9E00;
+    --gray-ligth: #969da3;
+    --gray-medium: #676a6d;
 }
 
 body {
@@ -16,14 +18,9 @@ body {
     /*letter-spacing: 0.1em;*/
 }
 
-#cards {
+/*#cards {
     padding: 2em;
-}
-
-#card-container {
-    padding: 1em;
-
-}
+}*/
 
 #card {
     width: 250px;
@@ -41,16 +38,29 @@ body {
 }
 
 #card h5 {
-    font-size: larger;
-    font-weight: 500;
+    font-family: Poppins, sans-serif;
+    font-size: x-large;
+    margin-top: -25px;
+    font-weight: 700;
     color: var(--dark);
 }
 
 #card h6 {
     font-size: larger;
-    font-weight: 400;
+    margin-top: -5px;
+    font-weight: 500;
     font-size: small;
-    color: var(--dark);
+    color: var(--gray-medium);
+}
+
+#card p {
+    margin-top: 1em;
+    font-size: small;
+    color: var(--gray-ligth);
+}
+
+#card #btn {
+    margin-top: 0.8em;
 }
 
 /*Estados de Conservación*/
