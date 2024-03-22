@@ -1,0 +1,53 @@
+:root {
+    --white: #E9EAEE;
+    --dark: #39373A;
+}
+
+body {
+    background-color: var(--white);
+}
+
+#navBar {
+    background-color: #39373A;
+    font-family: Poppins, sans-serif;
+    /*text-transform: uppercase;*/
+    font-weight: 600;
+    /*letter-spacing: 0.1em;*/
+}
+
+#cards {
+    padding: 2em;
+}
+
+#card-container {
+    padding: 1em;
+
+}
+
+#card {
+    width: 250px;
+    font-family: Poppins, sans-serif;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.09);
+}
+
+#card img {
+    border-radius: 0.8em;
+    padding: 0.5em;
+    height: 250px;
+    object-fit: cover;
+}
+
+#card h5 {
+    font-size: larger;
+    font-weight: 500;
+    color: var(--dark);
+}
+
+#card h6 {
+    font-size: larger;
+    font-weight: 400;
+    font-size: small;
+    color: var(--dark);
+}
