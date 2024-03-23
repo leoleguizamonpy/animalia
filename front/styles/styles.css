@@ -4,6 +4,7 @@
     --yellow: #ff9E00;
     --gray-ligth: #969da3;
     --gray-medium: #676a6d;
+    --gray-dark: #46484b;
 }
 
 body {
@@ -13,25 +14,37 @@ body {
 #navBar {
     background-color: #39373A;
     font-family: Poppins, sans-serif;
-    /*text-transform: uppercase;*/
-    font-weight: 600;
-    /*letter-spacing: 0.1em;*/
+    font-weight: 500;
 }
 
-/*#cards {
-    padding: 2em;
-}*/
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
 
 #card {
-    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 100%;
+    border-radius: 0;
     font-family: Poppins, sans-serif;
     background-color: #ffffff;
     border: none;
     box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.09);
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+#card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 1em;
 }
 
 #card img {
-    border-radius: 0.8em;
     padding: 0.5em;
     height: 250px;
     object-fit: cover;
@@ -39,39 +52,67 @@ body {
 
 #card h5 {
     font-family: Poppins, sans-serif;
-    font-size: x-large;
-    margin-top: -25px;
+    text-transform: uppercase;
+    font-size: large;
     font-weight: 700;
     color: var(--dark);
 }
 
 #card h6 {
     font-size: larger;
-    margin-top: -5px;
     font-weight: 500;
     font-size: small;
     color: var(--gray-medium);
 }
 
-#card p {
-    margin-top: 1em;
+#card-description {
     font-size: small;
-    color: var(--gray-ligth);
+    color: var(--dark);
 }
 
-#card #btn {
-    margin-top: 0.8em;
+#tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2em;
+}
+
+#tags {
+    border: 1px solid var(--dark);
+    color: var(--dark);
+    border-radius: 5em;
+    padding: 0 0.6em;
+    font-size: 0.7em;
+    text-decoration: none;
+}
+
+#tags:hover {
+    color: var(--gray-dark);
+}
+
+#btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 1em;
+}
+
+#btn-container #btn {
+    border-radius: 0;
+    font-size: small;
+    border-radius: 0.5em;
 }
 
 /*Estados de Conservación*/
-
 #vulnerable {
-    background-color: var(--yellow);
+    width: 25px;
     border: none;
+    border-radius: 0;
+    background-color: var(--yellow);
     color: var(--dark);
     font-size: x-small;
     text-transform: uppercase;
     padding: 0.5em;
     font-weight: 700;
-    margin-top: -75px;
+    margin-top: -20px;
+    margin-bottom: 15px;
 }
