@@ -1,0 +1,90 @@
+:root {
+    --white: #dadce3;
+    --dark: #39373A;
+    --yellow: #ff9E00;
+    --gray-ligth: #969da3;
+    --gray-medium: #676a6d;
+    --gray-dark: #46484b;
+}
+
+body {
+    background-color: var(--white);
+}
+
+#navBar {
+    background-color: #39373A;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+}
+
+.nav-bar {
+    padding: 1rem;
+}
+
+#nav {
+    border-radius: 0.5rem;
+}
+
+.search-container {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.container-col {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: rgb(0, 0, rgb(33, 33, 33));
+}
+
+.content-card {
+    justify-content: center;
+    align-items: center;
+    border-top: solid 1px var(--white);
+    padding: 0.5rem;
+}
+
+.content-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-txt-namecientific p {
+    font-family: Poppins, sans-serif;
+    color: var(--gray-medium);
+    padding: 0;
+    margin: 0;
+    padding-left: 1rem;
+    font-weight: 700;
+    font-size: 0.6em;
+    text-transform: uppercase;
+}
+
+.content-txt-namecommon p {
+    font-family: Poppins, sans-serif;
+    color: var(--dark);
+    margin: 0;
+    padding: 0;
+    padding-left: 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.content-txt-description p {
+    font-family: Poppins, sans-serif;
+    color: var(--dark);
+    margin: 0;
+    padding: 0;
+    padding-left: 1rem;
+    font-weight: 400;
+    font-size: 0.8em;
+}
+
+.img-card {
+    padding: 0.5rem;
+    border-radius: 120rem;
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}

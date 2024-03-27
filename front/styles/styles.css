@@ -1,8 +1,9 @@
 :root {
     --white: #E9EAEE;
-    --dark: #39373A;
+    --dark: #303030;
     --yellow: #ff9E00;
     --gray-ligth: #969da3;
+    --gray-ligth-medium: #dedede;
     --gray-medium: #676a6d;
     --gray-dark: #46484b;
 }
@@ -17,6 +18,15 @@ body {
     font-weight: 500;
 }
 
+.search-bar {
+    padding: 1em;
+    justify-content: left;
+}
+
+#search {
+    border-radius: 0;
+}
+
 #cards {
     display: flex;
     flex-wrap: wrap;
@@ -26,28 +36,36 @@ body {
 #card {
     display: flex;
     flex-wrap: wrap;
-    width: 300px;
+    width: 265px;
     height: 100%;
-    border-radius: 0;
+    border-radius: 0.2em;
     font-family: Poppins, sans-serif;
     background-color: #ffffff;
     border: none;
     box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.09);
-    margin-right: 1em;
+    margin: 0.5em;
     margin-bottom: 1em;
 }
+
+#card:hover {
+    box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.504);
+    transition: 1.2s;
+}
+
 
 #card-body {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 0 1em;
+    flex-grow: 1;
 }
 
 #card img {
     padding: 0.5em;
     height: 250px;
     object-fit: cover;
+    border-radius: 0.7em;
 }
 
 #card h5 {
@@ -60,7 +78,7 @@ body {
 
 #card h6 {
     font-size: larger;
-    font-weight: 500;
+    font-weight: 600;
     font-size: small;
     color: var(--gray-medium);
 }
@@ -68,18 +86,22 @@ body {
 #card-description {
     font-size: small;
     color: var(--dark);
+    max-height: 100px;
+    overflow: hidden;
 }
 
 #tags-container {
     display: flex;
     flex-wrap: wrap;
     gap: 0.2em;
+    margin-top: auto;
+    /* Coloca los tags al final de la tarjeta */
 }
 
 #tags {
-    border: 1px solid var(--dark);
+    background-color: var(--gray-ligth-medium);
     color: var(--dark);
-    border-radius: 5em;
+    border-radius: 0.3em;
     padding: 0 0.6em;
     font-size: 0.7em;
     text-decoration: none;
@@ -107,12 +129,12 @@ body {
     width: 25px;
     border: none;
     border-radius: 0;
-    background-color: var(--yellow);
-    color: var(--dark);
+    background-color: var(--dark);
+    color: var(--white);
     font-size: x-small;
     text-transform: uppercase;
     padding: 0.5em;
-    font-weight: 700;
+    font-weight: 500;
     margin-top: -20px;
     margin-bottom: 15px;
 }
